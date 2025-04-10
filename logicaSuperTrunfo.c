@@ -1,43 +1,30 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
+    char estado1[30], cidade1[30], codigo1[10],estado2[30], cidade2[30], codigo2[10];
+    int populacao1, turismo1, populacao2, turismo2;
+    float area1, PIB1, DensPop1, PIBpc1, DensPop2, PIBpc2, area2, PIB2;
 
+    //Valores da 1° carta
+    estado1 = "A";
+    cidade1 = "São Paulo";
+    codigo1 = "A01";
+    populacao1 = 12325000;
+    turismo1 = 50;
+    area1 = 1521.11;
+    PIB1 = 699.28;
+    //valores da carta 2
+    estado2 = B;
+    cidade2 = RiodeJaneiro;
+    codigo2 = B02;
+    populacao2 = 6748000;
+    turismo2 = 30;
+    area2 = 1200.25;
+    PIB2 = 300.50;
+
+    PIBpc1 = populacao1/area1;
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
-
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
-
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
-
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
-
-    // Exibição dos Resultados:
-    // Após realizar as comparações, exiba os resultados para o usuário.
-    // Certifique-se de que o sistema mostre claramente qual carta venceu e com base em qual atributo.
-
-    // Exemplo:
-    // printf("A cidade vencedora é: %s\n", cidadeVencedora);
+    printf("o Pib per capita é %f PIBpc1");
 
     return 0;
 }
